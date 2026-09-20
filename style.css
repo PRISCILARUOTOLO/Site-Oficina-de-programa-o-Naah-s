@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #080b16;
+    background: #4a2364;
     color: #f5f7ff;
     line-height: 1.6;
 }
@@ -148,7 +148,7 @@ nav a:hover {
 
 .botao:hover {
     transform: translateY(-3px);
-    background: #7d75ff;
+    background: #dd8c0b;
 }
 
 .botao-secundario {
@@ -458,7 +458,7 @@ nav a:hover {
 .botao-card {
     padding: 9px 15px;
 
-    background: #6c63ff;
+    background: #dba30b;
 
     border-radius: 8px;
 
