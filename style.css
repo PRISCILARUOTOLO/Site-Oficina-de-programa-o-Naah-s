@@ -53,6 +53,9 @@ a {
 .logo {
     font-size: 22px;
     font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .logo span {
@@ -60,22 +63,54 @@ a {
     margin-right: 8px;
 }
 
+
 nav {
     display: flex;
     gap: 25px;
 }
 
 nav a {
+    position: relative;
+
     color: #b8bfd4;
     font-size: 14px;
 
-    transition: 0.3s;
+    padding: 5px 0;
+
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -2px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #6c63ff,
+        #df9329
+    );
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    transition: width 0.35s ease;
 }
 
 nav a:hover {
     color: #ffffff;
 }
 
+nav a:hover::after {
+    width: 100%;
+}
 
 /* ==============================
    HERO
