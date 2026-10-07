@@ -1,15 +1,12 @@
-// =====================================
+
 // ANO AUTOMÁTICO
-// =====================================
 
 const ano = document.getElementById("ano");
 
 ano.textContent = new Date().getFullYear();
 
-
-// =====================================
 // ANIMAÇÃO DOS CARDS
-// =====================================
+
 
 const cards = document.querySelectorAll(".card");
 
@@ -50,10 +47,7 @@ cards.forEach((card) => {
 
 });
 
-
-// =====================================
 // MENU
-// =====================================
 
 const links = document.querySelectorAll("nav a");
 
